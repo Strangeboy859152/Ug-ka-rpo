@@ -179,18 +179,18 @@ bot.add_handler(MessageHandler(auth.my_plan_cmd, filters.command("plan") & filte
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 api_url = "http://master-api-v3.vercel.app/"
 api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzkxOTMzNDE5NSIsInRnX3VzZXJuYW1lIjoi4p61IFtvZmZsaW5lXSIsImlhdCI6MTczODY5MjA3N30.SXzZ1MZcvMp5sGESj0hBKSghhxJ3k1GTWoBUbivUe1I"
-photologo = 'https://cdn.pixabay.com/photo/2025/05/21/02/38/ai-generated-9612673_1280.jpg' #https://envs.sh/GV0.jpg
-photoyt = 'https://tinypic.host/images/2025/03/18/YouTube-Logo.wine.png' #https://envs.sh/GVi.jpg
-photocp = 'https://tinypic.host/images/2025/03/28/IMG_20250328_133126.jpg'
-photozip = 'https://envs.sh/cD_.jpg'
+photologo = 'https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg' #https://envs.sh/GV0.jpg
+photoyt = 'https://i.ibb.co/7xm7cXyg/STRANGER-BOY.jpg' #https://envs.sh/GVi.jpg
+photocp = 'https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg'
+photozip = 'https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/+wg5NEbdx1SM4YzY1")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/+kHZnTWoKmlZiYTY1")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+wg5NEbdx1SM4YzY1")        ],
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+kHZnTWoKmlZiYTY1")        ],
     ]
 )
 
@@ -316,7 +316,7 @@ async def start(bot: Client, m: Message):
                     photo=photologo,
                     caption="**🔒 Access Required**\n\nContact admin to get access.",
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("💫 Get Access", url="https://t.me/ItsUGBot")]
+                        [InlineKeyboardButton("💫 Get Access", url="https://t.me/+kHZnTWoKmlZiYTY1")]
                     ])
                 )
                 return
@@ -336,7 +336,7 @@ async def start(bot: Client, m: Message):
             await m.reply_photo(
                 photo=photologo,
                 caption=f"**👋 Welcome {m.from_user.first_name}!**\n\n{commands_list}",
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📚 Help", url="https://t.me/ItsUGBot")]])
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📚 Help", url="https://t.me/+kHZnTWoKmlZiYTY1")]])
             )
             
     except Exception as e:
@@ -363,7 +363,7 @@ async def unauthorized_handler(client, message: Message):
         "<blockquote>You need to have an active subscription to use this bot.\n"
         "Please contact admin to get premium access.</blockquote>",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("💫 Get Premium Access", url="https://t.me/ItsUGBot")
+            InlineKeyboardButton("💫 Get Premium Access", url="https://t.me/+kHZnTWoKmlZiYTY1")
         ]])
     )
 
